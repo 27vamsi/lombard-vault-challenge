@@ -1,7 +1,7 @@
 import "dotenv/config";
 import { ethers } from "ethers";
 
-const RPC_URL = process.env.RPC_URL || "https://mainnet.gateway.tenderly.co/4C3HTpEYMFdmhwyvoDXqlH";
+const RPC_URL = process.env.RPC_URL || "";
 const PRIVATE_KEY = process.env.PRIVATE_KEY || "";
 const provider = new ethers.JsonRpcProvider(RPC_URL);
 const wallet = PRIVATE_KEY ? new ethers.Wallet(PRIVATE_KEY, provider) : null;
